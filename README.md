@@ -1,5 +1,5 @@
 # BD2-TGA
-Trabalho sobre ORM utilizando o framework AdonisJS que possui seu proprio ORM, o Lucid.
+Trabalho sobre ORM utilizando o framework [AdonisJS](https://adonisjs.com/) que possui um ORM próprio, o [Lucid](https://docs.adonisjs.com/guides/database/introduction).
 
 ## Configuração inicial
 
