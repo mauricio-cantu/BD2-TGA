@@ -1,5 +1,5 @@
-# BD2-TGA
-Trabalho sobre ORM utilizando o framework [AdonisJS](https://adonisjs.com/) que possui um ORM próprio, o [Lucid](https://docs.adonisjs.com/guides/database/introduction).
+# Trabalho GA - Banco de Dados II
+Trabalho do Grau A para a disciplina de Banco de Dados II (Unisinos 2022/02) sobre ORM (Object-Relational Mapping) utilizando como ferramenta o framework [AdonisJS](https://adonisjs.com/) que possui um ORM próprio, o [Lucid](https://docs.adonisjs.com/guides/database/introduction).
 
 ## Configuração inicial
 
@@ -10,7 +10,7 @@ A versão mínima do Node.js exigida pelo Adonis é a v14.0. Você pode obter o 
 O gerenciador de pacotes utilizado no projeto é o [Yarn](https://yarnpkg.com/).
 
 ### Banco de dados
-O banco utilizado no projeto é o Postgres, portanto é necessário criar uma instância do mesmo. Atualize o arquivo .env com as configurações que você usou para criar a conexão com o banco, como user, password, porta e nome do banco. Se quiser criar o banco utilizando Docker, sugiro seguir o seguinte artigo: https://hevodata.com/learn/docker-postgresql/
+O banco utilizado no projeto é o Postgres, portanto é necessário criar uma instância do mesmo. Atualize o arquivo .env com as configurações de acesso ao banco criado (user, password, porta e nome do banco). É possível subir facilmente uma instância Postres utilizado Docker, segue tutorial: https://hevodata.com/learn/docker-postgresql/
 
 ### Aplicação
 Rode o comando `yarn` para instalar as dependências.
