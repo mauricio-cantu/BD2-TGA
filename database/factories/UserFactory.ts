@@ -1,8 +1,10 @@
-import user from 'App/Models/user'
-import Factory from '@ioc:Adonis/Lucid/Factory'
+import user from 'App/Models/User';
+import Factory from '@ioc:Adonis/Lucid/Factory';
 
 export default Factory.define(user, ({ faker }) => {
   return {
-    //
-  }
-}).build()
+    username: faker.internet.userName(),
+    password: faker.internet.password(),
+    email: faker.internet.email()
+  };
+}).build();
