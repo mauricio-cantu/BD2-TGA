@@ -1,12 +1,42 @@
 {
   "commands": {
+    "create:post": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "./commands/CreatePost",
+      "commandName": "create:post",
+      "description": "Persiste um post no BD",
+      "args": [
+        {
+          "type": "string",
+          "propertyName": "username",
+          "name": "username",
+          "required": true,
+          "description": "Nome de usuário do autor do post"
+        }
+      ],
+      "aliases": [],
+      "flags": []
+    },
+    "create:tag": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "./commands/CreateTag",
+      "commandName": "create:tag",
+      "description": "",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
     "create:user": {
       "settings": {
         "loadApp": true
       },
       "commandPath": "./commands/CreateUser",
       "commandName": "create:user",
-      "description": "Store a User to the DB",
+      "description": "Persiste um usuário no BD",
       "args": [],
       "aliases": [],
       "flags": []

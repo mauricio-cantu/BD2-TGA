@@ -9,7 +9,7 @@ export default class CreateUser extends BaseCommand {
   /**
    * Command description is displayed in the "help" output
    */
-  public static description = 'Store a User to the DB';
+  public static description = 'Persiste um usuário no BD';
 
   public static settings = {
     loadApp: true,
@@ -18,27 +18,28 @@ export default class CreateUser extends BaseCommand {
   public async run() {
     const User = (await import('App/Models/User')).default;
 
-    const username = await this.prompt.ask('Enter username');
-    const email = await this.prompt.ask('Enter email');
-    const password = await this.prompt.secure('Enter password');
-    const name = await this.prompt.ask("What's your name?");
-    const biography = await this.prompt.ask("Tell more about yourself");
+    const username = await this.prompt.ask('Digite o username');
+    const email = await this.prompt.ask('Digite o email');
+    const password = await this.prompt.secure('Digite a senha');
+    const name = await this.prompt.ask('Qual seu nome?');
+    const biography = await this.prompt.ask('Conte um pouco mais sobre você');
 
     try {
+      // cria registro na tabela Users
       const user = await User.create({
         username,
         password,
         email
       });
 
+      // cria registro na tabela Profiles já relacionando ao usuário criado anteriormente
       await user.related('profile').create({
         name,
         biography
       });
-      console.log(`User ${username} created successfully`);
+      this.logger.success(`Usuário ${username} criado com sucesso.`);
     } catch (e) {
-      console.log('An error occurred while saving the user.');
-      console.log(e);
+      this.logger.error('Um erro ocorreu ao persistir o usuário.');
     }
   }
 }
