@@ -41,6 +41,25 @@
       "aliases": [],
       "flags": []
     },
+    "list:users": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "./commands/ListUsers",
+      "commandName": "list:users",
+      "description": "List the users or user if ID arg is provided",
+      "args": [
+        {
+          "type": "string",
+          "propertyName": "id",
+          "name": "id",
+          "required": false,
+          "description": "User ID"
+        }
+      ],
+      "aliases": [],
+      "flags": []
+    },
     "dump:rcfile": {
       "settings": {},
       "commandPath": "@adonisjs/core/build/commands/DumpRc",
