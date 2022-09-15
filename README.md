@@ -16,4 +16,4 @@ O banco utilizado no projeto é o Postgres, portanto é necessário criar uma in
 Rode o comando `yarn` para instalar as dependências.
 
 ## Execução
-...
+A interação com o banco de dados é feita via CLI. Os comandos disponíveis se encontram na pasta `commands` na raiz do projeto.
