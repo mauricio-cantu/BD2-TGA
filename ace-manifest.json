@@ -41,6 +41,17 @@
       "aliases": [],
       "flags": []
     },
+    "list:post_and_tags": {
+      "settings": {
+        "loadApp": true
+      },
+      "commandPath": "./commands/ListPostAndTags",
+      "commandName": "list:post_and_tags",
+      "description": "Retorna os posts juntos com suas tags",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
     "list:users": {
       "settings": {
         "loadApp": true
