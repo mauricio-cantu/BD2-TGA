@@ -18,4 +18,14 @@ Após criar a instância do banco de dados e deixar ela rodando, você pode cria
 Rode o comando `yarn` para instalar as dependências.
 
 ## Execução
-A interação com o banco de dados é feita via CLI. Os comandos disponíveis se encontram na pasta `commands` na raiz do projeto.
+A interação com o banco de dados é feita via CLI. Na tabela abaixo é possível visualizar os comandos disponíveis.
+
+Para executar um comando, é necessário rodar no terminal `node ace <comando>`. Exemplo: `node ace list:users`.
+
+| Comando | Descrição |
+| --- | --- |
+| `list:users` | Lista usuários ou usuário específico caso um ID seja fornecido no comando |
+| `list:post_and_tags` | Coleção de exemplos de consultas feitas na tabela de Posts |
+| `create:user` | Persiste um usuário no BD |
+| `create:post` | Persiste um post no BD |
+| `create:tag` | Persiste uma tag no BD |
