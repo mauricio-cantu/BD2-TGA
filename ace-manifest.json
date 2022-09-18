@@ -25,7 +25,7 @@
       },
       "commandPath": "./commands/CreateTag",
       "commandName": "create:tag",
-      "description": "",
+      "description": "Persiste uma tag no BD",
       "args": [],
       "aliases": [],
       "flags": []
@@ -47,7 +47,7 @@
       },
       "commandPath": "./commands/ListPostAndTags",
       "commandName": "list:post_and_tags",
-      "description": "Retorna os posts juntos com suas tags",
+      "description": "Coleção de exemplos de consultas feitas na tabela de Posts",
       "args": [],
       "aliases": [],
       "flags": []

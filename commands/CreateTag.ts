@@ -10,7 +10,7 @@ export default class CreateTag extends BaseCommand {
   /**
    * Command description is displayed in the "help" output
    */
-  public static description = '';
+  public static description = 'Persiste uma tag no BD';
 
   public static settings = {
     loadApp: true,
