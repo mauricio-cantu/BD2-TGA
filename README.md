@@ -12,6 +12,8 @@ O gerenciador de pacotes utilizado no projeto é o [Yarn](https://yarnpkg.com/).
 ### Banco de dados
 O banco utilizado no projeto é o Postgres, portanto é necessário criar uma instância do mesmo. Atualize o arquivo .env com as configurações de acesso ao banco criado (user, password, porta e nome do banco). É possível subir facilmente uma instância Postres utilizado Docker, segue tutorial: https://hevodata.com/learn/docker-postgresql/
 
+Após criar a instância do banco de dados e deixar ela rodando, você pode criar a estrutura das tabelas rodando o comando `node ace migration:run`.
+
 ### Aplicação
 Rode o comando `yarn` para instalar as dependências.
 
