@@ -1,5 +1,4 @@
-# Trabalho GA - Banco de Dados II
-Trabalho do Grau A para a disciplina de Banco de Dados II (Unisinos 2022/02) sobre ORM (Object-Relational Mapping) utilizando como ferramenta o framework [AdonisJS](https://adonisjs.com/) que possui um ORM próprio, o [Lucid](https://docs.adonisjs.com/guides/database/introduction).
+Aplicação CLI para demonstração sobre ORM (Object-Relational Mapping) utilizando como ferramenta o framework [AdonisJS](https://adonisjs.com/) que possui um ORM próprio, o [Lucid](https://docs.adonisjs.com/guides/database/introduction).
 
 ## Configuração inicial
 
